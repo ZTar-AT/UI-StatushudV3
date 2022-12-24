@@ -1,0 +1,294 @@
+:root {
+    /* ฟอนต์ */
+    --font: Arial, Helvetica, sans-serif;
+    --font_color: white;
+
+    --color: linear-gradient(90deg, #0096e2 0%, #00d3d3 100%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: var(--font_color);
+}
+
+body {
+    background-color: none;
+    position: relative;
+}
+
+.containerwrap {
+    width: 32vw;
+    height: 6vw;
+    position: absolute;
+    right: -4.5vw;
+    bottom: 0vw;
+    /* background-color: rgb(94, 144, 144); */
+    transform: scale(0.6);
+
+}
+
+.containerwrap>img {
+    position: absolute;
+    top: -0.5vw;
+    height: 6.5vw;
+    width: 6.5vw;
+    right: -0.4vw;
+}
+
+
+/* blood  */
+.blood {
+    position: absolute;
+   
+    top: 1.2vw;
+    width: 27.9vw;
+    height: 2.5vw;
+    clip-path: polygon(100% 0, 95.5% 100%, 0 100%, 0 0);
+    background: #363636
+}
+
+.P_blood {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--color);
+    transition: all .3s ease-in;
+}
+
+.blood>img {
+    position: absolute;
+    top: 0.5vw;
+    right: 2vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+.blood>.tagnum {
+    position: absolute;
+    top: 0.7vw;
+    right: 4.5vw;
+    font-size: 1.3vw;
+}
+
+/* Stamina runs */
+.Stamina_runs {
+    position: absolute;
+    top: 0;
+    width: 14vw;
+    height: 0.2vw;
+    clip-path: polygon(100% 0, 98% 100%, 0 100%, 0 0);
+    background: #363636
+}
+
+.P_Stamina_runs {
+    transition: all .3s ease-in;
+
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #ffffff
+}
+
+
+/* shield */
+
+.shield {
+    z-index: -1;
+    position: absolute;
+    bottom: 1.5vw;
+    width: 11vw;
+    height: 1vw;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 7% 100%);
+    background: #363636
+}
+
+.P_shield {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #ffffff 0%, #979797 100%);
+    transition: all .3s ease-in;
+    
+}
+
+.shield>img {
+    position: absolute;
+    top: 0.25vw;
+    right: 1.5vw;
+    width: 0.7vw;
+    height: 0.7vw;
+}
+
+.shield>.tagnum {
+    position: absolute;
+    /* top: 0.7vw; */
+    right: 2.5vw;
+    font-size: 1vw;
+    transform: scale(0.7);
+}
+
+/* food */
+.food, .idea, .breathe {
+
+    position: absolute;
+    bottom: 0vw;
+    width: 5.5vw;
+    height: 1.6vw;
+    clip-path: polygon(100% 0, 87% 100%, 0 100%, 13% 0);
+
+    background: #363636
+}
+
+.food {
+    left: 10.7vw;
+}
+
+.idea {
+    left: 15.8vw;
+}
+
+.breathe {
+    left: 20.9vw;
+}
+
+.boximg {
+    position: absolute;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 27% 0);
+
+    background-color: #163643;
+}
+
+.boximg>img {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+}
+
+.P_food, .P_idea, .P_breathe {
+    transition: all .3s ease-in;
+
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.6vw;
+ 
+    clip-path: polygon(100% 0, 87% 100%, 0 100%, 13% 0);
+    background: var(--color);
+}
+
+
+.boxtop {
+    position: absolute;
+    top: 0.6vw;
+    left: -0.7vw;
+    width: 28.9vw;
+    height: 0.4vw;
+    clip-path: polygon(100% 0, 99% 100%, 0 100%, 0 0);
+    background: var(--color)
+}
+
+.boxtop_c {
+
+    position: absolute;
+    top: 0.6vw;
+    left: -0.7vw;
+    width: 0.4vw;
+    height: 3.1vw;
+    background: #0096e2
+}
+
+.boxtop_tag {
+    position: absolute;
+    clip-path: polygon(100% 100%, 90% 0, 10% 0, 0 100%);
+    top: -0.5vw;
+    left: 7vw;
+    width: 13vw;
+    height: 1.5vw;
+    background: var(--color)
+}
+
+.boxtop_tag>.tagnum {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+
+    color: white;
+    text-align: center;
+    transform: scale(0.7);
+}
+
+/* .food{   left: 14.2vw;}
+.idea{   left: 18.8vw;}
+.breathe{   left: 23.3vw;} */
+.tagnum {
+    position: absolute;
+    top: 0.3vw;
+    right: 2.4vw;
+    font-size: 1vw;
+    transform: scale(0.7);
+}
+
+
+
+.blink {
+    -webkit-animation: blink 700ms infinite alternate;
+    -moz-animation: blink 700ms infinite alternate;
+    -o-animation: blink 700ms infinite alternate;
+    animation: blink 700ms infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+;
